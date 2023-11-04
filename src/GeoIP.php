@@ -37,7 +37,7 @@ class GeoIP extends Component
      */
     public function init()
     {
-        $db = $this->dbPath ?: Yii::getAlias('@vendor/lysenkobv/maxmind-geolite2-database/city.mmdb');
+        $db = $this->dbPath ?: Yii::getAlias('@vendor/kukla-svitla/maxmind-geolite2-database/city.mmdb');
 
         $this->session = Yii::$app->session;
         $this->reader = new Reader($db);
